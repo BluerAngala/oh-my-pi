@@ -81,7 +81,7 @@ Verbatim section order, no other top-level headings:
 ```
 ## Repro
 <one paragraph describing the failing scenario, plus the exact command(s) that
-reproduce it. Reference the recorded transcript path under `context/repro/`.>
+reproduce it.>
 
 ## Cause
 <one paragraph naming the code path that produced the bug. Cite files and

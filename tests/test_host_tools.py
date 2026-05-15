@@ -240,7 +240,7 @@ def test_repro_record_writes_transcript(db: Database, tmp_path: Path) -> None:
             },
             _ctx(),
         )
-        assert "saved transcript" in result
+        assert result == "recorded"
         files = list(bindings.workspace.repro_dir.iterdir())
         assert len(files) == 1
         assert "exit_code: 1" in files[0].read_text()

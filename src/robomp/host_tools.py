@@ -772,8 +772,7 @@ def _build_repro_record(bindings: ToolBindings) -> HostTool[Any, Any]:
             encoding="utf-8",
         )
         _audit(bindings, "repro_record", args, result={"path": str(target.relative_to(bindings.workspace.root))})
-        rel = target.relative_to(bindings.workspace.root)
-        return f"saved transcript to {rel}"
+        return "recorded"
 
     return host_tool(
         name="repro_record",
